@@ -1,0 +1,307 @@
+/* cores */
+:root{
+    --cor1: #4C1E59;
+    --cor2:#2D1A40;
+    --cor3:#161426;
+    --cor4:#7D858C;
+    --cor5:#D9D9D9;
+}
+
+/* configuração geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor5);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#interface{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+h2.titulo{
+    text-align: center;
+    font-size: 2em;
+}
+h2.titulo span{
+    color: var(--cor2);
+}
+/* cabeçalho */
+#interface{ 
+    padding: 40px 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#interface > .logo img{
+    height: 70px;
+}
+
+#interface > nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+#interface > nav > ul > li{
+    margin: 20px;
+}
+
+#interface > nav > ul > li >a {
+    text-decoration: none;
+    color: #16142684;
+}
+#interface > nav > ul > li >a:hover{
+    color: #161426;
+    transform: scale(1.2);
+    display: inline-block;
+    transition: 0.5s;
+}
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  button:hover {
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+#topo-do-site{
+    padding: 40px 10%;
+}
+#topo-do-site>.interface>.flex{
+    align-items: center;
+    justify-content:center ;
+    gap: 200px;
+}
+
+#topo-do-site h1 {
+    font-size: 42px;
+    line-height: 40px;
+}
+
+#topo-do-site p{
+    margin: 40px 0 ;
+}
+
+#topo-do-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    transform: translate(-65px);
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* estilo das epecialidades */
+
+#especialidades{
+    padding: 40px 10%;
+}
+
+#especialidades .flex{
+    gap: 60px;
+}
+
+#especialidades .especialidades-flex{
+    padding:20px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.5s;
+}
+
+#especialidades .especialidades-flex:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px var(--cor2);
+}
+
+#especialidades .especialidades-flex i{
+    font-size: 70px;
+}
+
+#especialidades .especialidades-flex h1{
+    margin: 15px 0;
+}
+
+.sobre{
+    padding: 40px 10%;
+}
+
+.sobre img{
+    height: 500px;
+}
+
+.sobre .texto-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .texto-sobre h2 span{
+    color: var(--cor1);
+    display: block;
+}
+
+.sobre .texto-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .btn-social button{
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #4C1E59;
+    font-size:20px
+}
+.portifolio > .interface > h2 > span{
+    color: var(--cor1);
+}
+
+.portifolio {
+    padding: 80px 10%;
+    box-shadow: 0 0 40px 10px #4c1e5954;
+}
+.portifolio .flex{
+    margin-top: 60px;
+    gap: 80px;
+}
+.porti-img{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+.porti-img:hover{
+    background-position: 100% 100%;   
+}
+.orverlew{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #16142642;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.orverlew:hover{
+opacity: 1;
+}
+
+
+.fale-comigo{
+    padding: 60px 10%;
+}
+
+.fale-comigo .texto{
+    width: 60%;
+    margin: auto;
+}
+.fale-comigo .texto h2{
+    margin-bottom: 20px;
+}
+.fale-comigo .texto h3 p {
+    margin: 10px;
+    font-size: 2em;
+}
+#ent-contato{
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    padding: 60px 10px;
+    padding: 80px 10%;
+    box-shadow: 0 0 40px 10px #4c1e5954;
+}
+footer img{
+    height: 80px;
+}
+footer .flex{
+    justify-content: space-between;
+}
+.line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-bottom: 2px solid #2D1A40;
+    margin: 20px 0;
+}
+
+footer.line-footer p i{
+    color: #2D1A40;
+    font-size: 22px;
+}
+footer.line-footer p a{
+    color: black;
+}
+@media only screen and (max-width: 768px){
+
+    header #interface #btn-contato{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 999px){
+
+    header #interface #btn-contato{
+        display: none;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .portifolio .interface .flex{
+        align-items: center;
+        justify-content: center;
+    }
+}
