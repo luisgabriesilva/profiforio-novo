@@ -292,6 +292,9 @@ footer.line-footer p a{
 }
 
 @media only screen and (max-width: 999px){
+    header #interface{
+        display: none;
+    }
 
     header #interface #btn-contato{
         display: none;
